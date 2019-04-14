@@ -9,7 +9,7 @@ test("Assertion for H1", async t => {
 });
 
 test("Assertion for Timeout h2", async t => {
-  const h2 = Selector("h2");
+  const h2 = Selector("h2", { timeout: 5000 });
 
   await t.expect(h2.innerText).eql("Super Awesome Timeout Test");
 });
