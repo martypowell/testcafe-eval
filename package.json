@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe \"chrome:headless\" chrome **/e2e/**/*.test.js"
+    "test": "testcafe chrome **/e2e/**/*.test.js",
+    "headless-test": "testcafe \"chrome:headless\" chrome **/e2e/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
