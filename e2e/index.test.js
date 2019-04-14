@@ -7,3 +7,9 @@ test("Assertion for H1", async t => {
 
   await t.expect(h1.innerText).eql("My Awesome Title");
 });
+
+test("Assertion for Timeout h2", async t => {
+  const h2 = Selector("h2");
+
+  await t.expect(h2.innerText).eql("Super Awesome Timeout Test");
+});

@@ -8,5 +8,19 @@
   </head>
   <body>
     <h1>My Awesome Title</h1>
+    <section id="timeout-test"></section>
+    <script>
+      (function() {
+        var timeoutTestContainer = document.getElementById("timeout-test");
+        var timeoutHeadingNode = document.createElement("h2");
+        var timeoutHeadingTextNode = document.createTextNode(
+          "Super Awesome Timeout Test"
+        );
+        timeoutHeadingNode.appendChild(timeoutHeadingTextNode);
+        setTimeout(function() {
+          timeoutTestContainer.appendChild(timeoutHeadingNode);
+        }, 5000);
+      })();
+    </script>
   </body>
 </html>
